@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style>
+    @font-face {
+      font-family: "Agrandir";
+      src: url("agrandir.ttf");
+      font-weight: 100 900;
+      font-stretch: 50% 200%;
+    }
+
+    html,
+    body,
+    div,
+    p {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-weight: 900;
+      font-stretch: 200%;
+      font-size: 1em;
+      line-height: 2.3em;
+      background-color: black;
+    }
+
+    body {
+      font-family: "Agrandir";
+      color: rgba(255, 255, 255, 0);
+    }
+
+    #SINE,
+    #TRIANGLE,
+    #SAWTOOTH,
+    #SQUARE {
+      text-align: center;
+      width: 50%;
+      height: 50%;
+      font-size: 15em;
+    }
+
+    #SINE,
+    #SAWTOOTH {
+      float: left;
+    }
+
+    #TRIANGLE,
+    #SQUARE {
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="SINE">
+    <div class="content">
+      <p class="sine">
+        SIN
+      </p>
+    </div>
+  </div>
+  <div id="TRIANGLE">
+    <div class="content">
+      <p class="triangle">
+        TRI
+      </p>
+    </div>
+  </div>
+  <div id="SAWTOOTH">
+    <div class="content">
+      <p class="sawtooth">
+        SAW
+      </p>
+    </div>
+  </div>
+  <div id="SQUARE">
+    <div class="content">
+      <p class="square">
+        SQU
+      </p>
+    </div>
+  </div>
+  <script src="midi.js"></script>
+</body>
+
+</html>
